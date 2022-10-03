@@ -1,4 +1,7 @@
 $darkAquaMarine: hsl(158, 36%, 37%);
+$darkAquaMarineHover: hsl(158, 37%, 24%);
+$veryDarkBlue: hsl(212, 21%, 14%);
+$darkGrayishBlue: hsl(228, 12%, 48%);
 
 *, html, body {
   margin: 0;
@@ -14,97 +17,138 @@ $darkAquaMarine: hsl(158, 36%, 37%);
   color: hsl(228, 45%, 44%); 
 }
 
-.card{
-  width: 414px;
-  height: 313px;
-  background-color: whitesmoke;
-  border-radius: 10px;
+.main_page {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(30, 38%, 92%);
 }
 
-.card_wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
+p {
+  font-family: "Montserrat", sans-serif;
 }
 
-
-// Card Image (Left Side) //
-.card_img--container {
-  width: 50%;
-  height: 100%;
-  background-color: burlywood;
-}
-
-.img_wrapper {
-  width: 100%;
-  height: 100%;
-}
-
-.img_wrapper {
-
-  img {
+@media screen and (min-width: 1440px) {
+  
+  .main_page--content {
     width: 100%;
     height: 100%;
-  }
- 
-}
-
-// Card Info (Right Side)
-
-.card_info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  height: 100%;
-  padding: 5px 25px;
-
-  #card_title {
-    font-family: 'Fraunces', serif ;
-    font-size: 25px;
-    width: 180px;
-  }
-
-  h2 {
-    font-family: 'Montserrat', sans-serif ;
-    font-size: 8px;
-    margin: 10px 0px;
-    letter-spacing: 5px;
-  }
-
-  p {
-    width: 160px;
-    font-size: 10px;
-    font-family: 'Montserrat', sans-serif;
-    margin: 10px 0px;
-  }
-
-  #card_prices {
     display: flex;
     align-items: center;
-    margin: 0px 0px;
-
-    #new_price {
-      color: $darkAquaMarine;
-      font-family: 'Fraunces', serif;
-      font-size: 20px;
-      margin-right: 10px;
-    }
-
-    #old_price {
-      text-decoration: line-through;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 12px;
-    }
+    justify-content: center;
   }
-
-  #buy_btn {
-    color: white;
-    border: none;
-    border-radius: 5px;
-    height: 40px;
-    width: 140px;
-    background-color: hsl(158, 36%, 37%);
+  
+  .card{
+    width: 50%;
+    height: 60%;
+    background-color: whitesmoke;
+    border-radius: 2% 2% ;
+  }
+  
+  .card_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+  }
+  
+  
+  // Card Image (Left Side) //
+  .card_img--container {
+    width: 50%;
+    height: 100%;
+    background-color: burlywood;
+    border-radius: 10px;
+  }
+  
+  .img_wrapper {
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .img_wrapper {
+  
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 2% 0% 0% 2% ;
+    }
+   
+  }
+  
+  // Card Info (Right Side)
+  
+  .card_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 5px 25px;
+  
+    #card_title {
+      font-family: 'Fraunces', serif ;
+      font-size: 2.7em;
+      width: 90%;
+    }
+  
+    h2 {
+      font-family: 'Montserrat', sans-serif ;
+      font-size: .8em;
+      margin: 0px 0px 30px 8px;
+      letter-spacing: 9px;
+    }
+  
+    #card_description {
+      width: 100%;
+      font-size: 1.2em;
+      font-family: 'Montserrat', sans-serif;
+      margin: 10px 0px 20px 0px;
+      line-height: 150%;
+    }
+  
+    #card_prices {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+  
+      #new_price {
+        color: $darkAquaMarine;
+        font-family: 'Fraunces', serif;
+        font-size: 3em;
+        margin-right: 30px;
+      }
+  
+      #old_price {
+        text-decoration: line-through;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2em;
+      }
+    }
+  
+    #buy_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      height: 10%;
+      width: 95%;
+      background-color: $darkAquaMarine;
+      margin-top: 30px;
+  
+  
+      p {
+        margin: 0px 10px;
+        font-size: 1.5em;
+      }
+    }
+  
+    #buy_btn:hover {
+      cursor: pointer;
+      background-color: $darkAquaMarineHover;
+    }
   }
 }
 

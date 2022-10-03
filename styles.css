@@ -13,83 +13,112 @@
   color: hsl(228deg, 45%, 44%);
 }
 
-.card {
-  width: 414px;
-  height: 313px;
-  background-color: whitesmoke;
-  border-radius: 10px;
+.main_page {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(30deg, 38%, 92%);
 }
 
-.card_wrapper {
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
-
-.card_img--container {
-  width: 50%;
-  height: 100%;
-  background-color: burlywood;
-}
-
-.img_wrapper {
-  width: 100%;
-  height: 100%;
-}
-
-.img_wrapper img {
-  width: 100%;
-  height: 100%;
-}
-
-.card_info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 50%;
-  height: 100%;
-  padding: 5px 25px;
-}
-.card_info #card_title {
-  font-family: "Fraunces", serif;
-  font-size: 25px;
-  width: 180px;
-}
-.card_info h2 {
+p {
   font-family: "Montserrat", sans-serif;
-  font-size: 8px;
-  margin: 10px 0px;
-  letter-spacing: 5px;
 }
-.card_info p {
-  width: 160px;
-  font-size: 10px;
-  font-family: "Montserrat", sans-serif;
-  margin: 10px 0px;
-}
-.card_info #card_prices {
-  display: flex;
-  align-items: center;
-  margin: 0px 0px;
-}
-.card_info #card_prices #new_price {
-  color: hsl(158deg, 36%, 37%);
-  font-family: "Fraunces", serif;
-  font-size: 20px;
-  margin-right: 10px;
-}
-.card_info #card_prices #old_price {
-  text-decoration: line-through;
-  font-family: "Montserrat", sans-serif;
-  font-size: 12px;
-}
-.card_info #buy_btn {
-  color: white;
-  border: none;
-  border-radius: 5px;
-  height: 40px;
-  width: 140px;
-  background-color: hsl(158deg, 36%, 37%);
+
+@media screen and (min-width: 1440px) {
+  .main_page--content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 50%;
+    height: 60%;
+    background-color: whitesmoke;
+    border-radius: 2% 2%;
+  }
+  .card_wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  .card_img--container {
+    width: 50%;
+    height: 100%;
+    background-color: burlywood;
+    border-radius: 10px;
+  }
+  .img_wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .img_wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2% 0% 0% 2%;
+  }
+  .card_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    padding: 5px 25px;
+  }
+  .card_info #card_title {
+    font-family: "Fraunces", serif;
+    font-size: 2.7em;
+    width: 90%;
+  }
+  .card_info h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8em;
+    margin: 0px 0px 30px 8px;
+    letter-spacing: 9px;
+  }
+  .card_info #card_description {
+    width: 100%;
+    font-size: 1.2em;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 0px 20px 0px;
+    line-height: 150%;
+  }
+  .card_info #card_prices {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .card_info #card_prices #new_price {
+    color: hsl(158deg, 36%, 37%);
+    font-family: "Fraunces", serif;
+    font-size: 3em;
+    margin-right: 30px;
+  }
+  .card_info #card_prices #old_price {
+    text-decoration: line-through;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2em;
+  }
+  .card_info #buy_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 10%;
+    width: 95%;
+    background-color: hsl(158deg, 36%, 37%);
+    margin-top: 30px;
+  }
+  .card_info #buy_btn p {
+    margin: 0px 10px;
+    font-size: 1.5em;
+  }
+  .card_info #buy_btn:hover {
+    cursor: pointer;
+    background-color: hsl(158deg, 37%, 24%);
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
