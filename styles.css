@@ -17,48 +17,51 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 
-@media screen and (min-width: 375px) and (max-width: 575px) {
-  .main_page {
-    width: 100vw;
-    height: 100vh;
-    background-color: hsl(30deg, 38%, 92%);
-  }
+.main_page {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+@media screen and (min-width: 200px) and (max-width: 575px) {
   .main_page--content {
-    width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .card {
     width: 90%;
-    min-height: 90%;
+    height: 90%;
     background-color: blue;
     border-radius: 10px;
     overflow: hidden;
   }
   .card_wrapper {
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     background-color: palevioletred;
     border-radius: 10px;
   }
   .card_img--container {
     background-color: paleturquoise;
-    height: 40%;
+    width: 100%;
+    height: 43%;
+    overflow: hidden;
   }
-  .card_img--container .img_wrapper {
+  .img_wrapper {
     width: 100%;
     height: 100%;
   }
-  .card_img--container .img_wrapper #card_img {
+  .img_wrapper #card_img {
     width: 100%;
-    height: 100%;
-    margin: -110px 0 0 0px;
+    margin: -38% 0% 0% 0%;
   }
   .card_info {
-    padding: 25px;
-    min-height: 60%;
+    padding: 5% 8%;
+    width: 100%;
+    height: 60%;
     background-color: white;
   }
   .card_info h2 {
@@ -66,17 +69,25 @@ p {
     font-size: 0.5em;
     font-weight: lighter;
     letter-spacing: 10px;
-    margin: 0px 0px 10px 0px;
+    padding: 2% 0;
+  }
+  .card_info #card_title {
+    font-size: 2em;
+    font-family: "Fraunces", serif;
+    padding: 2% 0;
   }
   .card_info p {
     width: 100%;
     line-height: 25px;
-    font-size: 0.85em;
-    margin: 10px 0px;
+    font-size: 0.62em;
+    padding: 1% 0;
   }
   .card_info #card_prices {
     display: flex;
-    margin: 10px 0px;
+    padding: 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .card_info #card_prices #new_price {
     font-family: "Fraunces", serif;
@@ -93,7 +104,7 @@ p {
     border-radius: 5px;
     color: white;
     display: flex;
-    height: 15%;
+    min-height: 15%;
     justify-content: center;
     width: 98%;
     font-size: 1em;
@@ -101,14 +112,10 @@ p {
   .card_info #buy_btn p {
     margin: 0;
     width: 40%;
+    font-size: 1em;
   }
 }
 @media screen and (min-width: 576px) {
-  .main_page {
-    width: 100vw;
-    height: 100vh;
-    background-color: hsl(30deg, 38%, 92%);
-  }
   .main_page--content {
     max-width: 100%;
     min-height: 100%;
@@ -154,7 +161,7 @@ p {
   }
   .card_info h2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 0.8em;
+    font-size: 0.9em;
     padding: 8% 0;
     letter-spacing: 9px;
   }
@@ -162,29 +169,29 @@ p {
     min-width: 80%;
     max-width: 100%;
     min-height: 20%;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-family: "Montserrat", sans-serif;
-    padding: 8% 0;
+    padding: 5% 0;
     line-height: 150%;
-    margin: 5% 0;
+    margin: 1% 0;
   }
   .card_info #card_prices {
     display: flex;
     align-items: center;
     width: 90%;
-    padding: 2% 0;
+    padding: 10% 0;
   }
   .card_info #card_prices #new_price {
     color: hsl(158deg, 36%, 37%);
     font-family: "Fraunces", serif;
     font-size: 2.5em;
-    padding: 5% 8% 5% 0%;
+    padding: 2% 8% 0% 0%;
   }
   .card_info #card_prices #old_price {
     text-decoration: line-through;
     font-family: "Montserrat", sans-serif;
     font-size: 1.2em;
-    padding: 5% 8% 5% 0%;
+    padding: 2% 8% 0% 0%;
   }
   .card_info #buy_btn {
     display: flex;
@@ -196,7 +203,7 @@ p {
     min-height: 10%;
     max-width: 95%;
     background-color: hsl(158deg, 36%, 37%);
-    margin: 5% 0;
+    margin: 2% 0;
   }
   .card_info #buy_btn p {
     font-size: 1.2em;
